@@ -1,0 +1,6 @@
+public/*
+src/Tests/*
+craco.config.js
+tsup.config.ts
+service-worker.ts
+serviceWorkerRegistration.ts
