@@ -1,6 +1,6 @@
 {
   "name": "react-pwa-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/entry.js",
   "module": "./dist/entry.mjs",
   "types": "./dist/entry.d.ts",
