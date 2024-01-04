@@ -7,7 +7,11 @@ import InstallPWATutorialDialog from '../Dialogs/TutorialDialogs/InstallPWATutor
 import { TutorialDialogButton } from 'shouldve-been-mui';
 import { isInstalled, isSafari } from 'shouldve-been-js';
 
-export function InstallPWAComponent(): JSX.Element {
+type InstallPWAComponentProps = {
+    applicationName: string,
+};
+
+export function InstallPWAComponent(props: InstallPWAComponentProps): JSX.Element {
 
     const currentTheme: Theme = useTheme();
     
@@ -34,9 +38,10 @@ export function InstallPWAComponent(): JSX.Element {
             <InstallPWATutorialDialog
                 controller={controller}
                 onClose={onClose}
+                applicationName={props.applicationName}
             />
         );
-    }, []);
+    }, [props.applicationName]);
 
     function handleInstall(e: React.MouseEvent): void {
         

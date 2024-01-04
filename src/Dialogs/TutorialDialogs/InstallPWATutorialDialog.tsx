@@ -10,6 +10,7 @@ import type { JSX } from 'react';
 type InstallPWATutorialDialogProps = {
     controller: boolean,
     onClose: () => void,
+    applicationName: string,
 };
 
 function InstallPWATutorialDialog(props: InstallPWATutorialDialogProps): JSX.Element {
@@ -25,7 +26,7 @@ function InstallPWATutorialDialog(props: InstallPWATutorialDialogProps): JSX.Ele
             <DialogContent>
                 <DialogContentText component='span'>
                     <ul>
-                        <li className='tutorial-li-item'>K-Fleet Experience can either be accessed as a normal webpage, or be installed on your device.</li>
+                        <li className='tutorial-li-item'>{props.applicationName} can either be accessed as a normal webpage, or be installed on your device.</li>
                         <li className='tutorial-li-item'>Installation has the advantages of supporting offline usage and easier accessability.</li>
                         <li className='tutorial-li-item'>The application will automatically update when you have an internet connection.</li>
                         <li className='tutorial-li-item'>A small number of browsers/devices do not support installation. Try switching browser or use the application as a normal webpage.</li>
