@@ -11,7 +11,7 @@ type InstallPWAComponentProps = {
     applicationName: string,
 };
 
-export function InstallPWAComponent(props: InstallPWAComponentProps): JSX.Element {
+export function InstallPWAComponent(props: Readonly<InstallPWAComponentProps>): JSX.Element {
 
     const currentTheme: Theme = useTheme();
     

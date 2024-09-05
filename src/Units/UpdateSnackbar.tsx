@@ -12,7 +12,7 @@ type ErrorSnackbarProps = {
     onRefresh: () => void,
 };
 
-function ErrorSnackbar(props: ErrorSnackbarProps): JSX.Element {
+function ErrorSnackbar(props: Readonly<ErrorSnackbarProps>): JSX.Element {
 
     const currentTheme: Theme = useTheme();
 

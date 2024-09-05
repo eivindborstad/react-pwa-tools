@@ -13,7 +13,7 @@ type InstallPWATutorialDialogProps = {
     applicationName: string,
 };
 
-function InstallPWATutorialDialog(props: InstallPWATutorialDialogProps): JSX.Element {
+function InstallPWATutorialDialog(props: Readonly<InstallPWATutorialDialogProps>): JSX.Element {
 
     return (
         <Dialog 
