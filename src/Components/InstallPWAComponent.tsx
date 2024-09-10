@@ -100,6 +100,7 @@ export function InstallPWAComponent(props: Readonly<InstallPWAComponentProps>): 
                     <br />
                     <TutorialDialogButton
                         dialog={dialogGenerator}
+                        size='lg'
                     />
                 </>
             }
